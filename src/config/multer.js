@@ -28,7 +28,7 @@ module.exports = {
             'image/gif'
         ];
 
-        if(allowedMimes.includes(file.mimetype)) {
+        if (allowedMimes.includes(file.mimetype)) {
             cb(null, true);
         } else {
             cb(new Error('Invalid file type'));
